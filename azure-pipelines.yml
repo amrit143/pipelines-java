@@ -17,11 +17,15 @@ steps:
       
       echo Hello world
       
-- task: SendGridEmail@2
+
+- task: SendEmail@1
   inputs:
-    SendGridApiKey: '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'
-    FromAddress: 'proamritgupta@gmail.com'
-    ToAddresses: 'proamritgupta@gmail.com'
+    To: 'proamritgupta@gmail.com'
+    From: 't_amrit.gupta@tatadigital.com'
     Subject: 'check'
-    emailBodyFormat: 'InLine'
-    EmailBody: 'deployment'
+    Body: 'check'
+    BodyAsHtml: false
+    AddAttachment: false
+    SmtpServer: 'smtp.sendgrid.net'
+    SmtpUsername: 'azure_2adfbb4338ada7a9e01fa67080578b9f@azure.com'
+    SmtpPassword: 'tcs@12345'
