@@ -17,18 +17,6 @@ steps:
       echo Hello world
       
 
-- task: SendEmail@1
-  inputs:
-    To: 'proamritgupta@gmail.com'
-    From: 't_amrit.gupta@tatadigital.com'
-    Subject: 'check'
-    Body: 'check'
-    BodyAsHtml: false
-    AddAttachment: false
-    SmtpServer: 'smtp.sendgrid.net'
-    SmtpUsername: 'azure_2adfbb4338ada7a9e01fa67080578b9f@azure.com'
-    SmtpPassword: 'tcs@12345'
-
 - task: SendGrid@1
   inputs:
     sendgridkey: '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'
