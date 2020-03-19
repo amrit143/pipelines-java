@@ -20,8 +20,8 @@ steps:
 - task: SendGrid@1
   inputs:
     sendgridkey: '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'
-    to: 'proamritgutpa@gmail.com'
-    from: 'proamritgutpa@gmail.com'
+    to: 'proamritgupta@gmail.com'
+    from: 'proamritgupta@gmail.com'
     subject: 'file'
     htmlbody: 'check'
     addattachment: true
