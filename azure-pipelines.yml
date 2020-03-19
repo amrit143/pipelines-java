@@ -12,7 +12,8 @@ steps:
   inputs:
     script: |
       echo Write your commands here
-      
+      cd /home/vsts/work/1/s
+      touch file.txt
       echo Hello world
       
 
@@ -27,3 +28,13 @@ steps:
     SmtpServer: 'smtp.sendgrid.net'
     SmtpUsername: 'azure_2adfbb4338ada7a9e01fa67080578b9f@azure.com'
     SmtpPassword: 'tcs@12345'
+
+- task: SendGrid@1
+  inputs:
+    sendgridkey: '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'
+    to: 'proamritgutpa@gmail.com'
+    from: 'proamritgutpa@gmail.com'
+    subject: 'file'
+    htmlbody: 'check'
+    addattachment: true
+    attachment: '/home/vsts/work/1/s/file.txt'
