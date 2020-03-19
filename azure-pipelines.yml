@@ -16,7 +16,7 @@ steps:
       echo Write your commands here
       
       echo Hello world
-      sh run.sh
+      
 - task: SendGridEmail@2
   inputs:
     SendGridApiKey: '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'
